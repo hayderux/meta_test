@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
         body: Consumer(
       builder: (context, ref, child) {
         var prov = ref.watch(metaProvider);
-        if (prov.isConnected && prov.isChainWork) {
+        if (prov.isConnected) {
           return const Center(
               child: Text(
             'Connected :)',
